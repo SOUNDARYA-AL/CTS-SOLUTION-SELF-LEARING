@@ -1,0 +1,20 @@
+Geolocation for Event Mapping:
+
+<button onclick="findLocation()">Find Nearby Events</button>
+<p id="locationResult"></p>
+
+<script>
+  function findLocation() {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        document.getElementById("locationResult").textContent =
+          `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+      },
+      (err) => {
+        document.getElementById("locationResult").textContent =
+          "Location access denied or timed out.";
+      },
+      { enableHighAccuracy: true, timeout: 5000 }
+    );
+  }
+</script>

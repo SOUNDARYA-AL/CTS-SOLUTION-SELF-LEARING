@@ -1,0 +1,15 @@
+Event Registration Form:
+
+<form onsubmit="event.preventDefault(); document.getElementById('confirm').value='Registration Successful!';">
+  <input type="text" name="name" placeholder="Name" required autofocus><br>
+  <input type="email" name="email" placeholder="Email" required><br>
+  <input type="date" name="date" required><br>
+  <select name="eventType">
+    <option value="">Select Event</option>
+    <option value="Music">Music</option>
+    <option value="Art">Art</option>
+  </select><br>
+  <textarea name="message" placeholder="Your message"></textarea><br>
+  <output id="confirm"></output><br>
+  <button type="submit">Register</button>
+</form>

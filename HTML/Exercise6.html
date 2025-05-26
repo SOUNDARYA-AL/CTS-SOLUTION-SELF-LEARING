@@ -1,0 +1,42 @@
+Event Feedback with Events Handling:
+
+<form>
+  Phone: <input type="text" onblur="validatePhone(this)"><br>
+
+  Event Type:
+  <select onchange="showFee(this)">
+    <option value="10">Music</option>
+    <option value="15">Art</option>
+  </select>
+  <p id="feeDisplay"></p>
+
+  <button type="button" onclick="confirmSubmit()">Submit Feedback</button>
+  <output id="formMsg"></output><br>
+
+  <img src="event.jpg" ondblclick="enlargeImage(this)" style="width:100px;"><br>
+
+  <textarea onkeydown="countChars(this)"></textarea>
+  <p>Characters: <span id="charCount">0</span></p>
+</form>
+
+<script>
+  function validatePhone(el) {
+    if (!/^\d{10}$/.test(el.value)) alert("Invalid phone number");
+  }
+
+  function showFee(sel) {
+    document.getElementById("feeDisplay").textContent = "Fee: $" + sel.value;
+  }
+
+  function confirmSubmit() {
+    document.getElementById("formMsg").value = "Feedback submitted!";
+  }
+
+  function enlargeImage(img) {
+    img.style.width = "200px";
+  }
+
+  function countChars(el) {
+    document.getElementById("charCount").textContent = el.value.length;
+  }
+</script>
