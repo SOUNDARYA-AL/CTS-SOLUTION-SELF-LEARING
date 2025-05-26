@@ -1,0 +1,11 @@
+Selectors Playground
+
+* { margin: 0; padding: 0; } – Universal reset
+
+h2 { font-size: 20px; } – Element selector
+
+#mainHeader { background: blue; } – ID selector
+
+.eventCard { border: 1px solid gray; } – Class selector
+
+h3, p { color: #333; } – Grouping selector

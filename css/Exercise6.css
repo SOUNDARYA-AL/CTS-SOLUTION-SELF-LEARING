@@ -1,0 +1,13 @@
+Link and List Styling:
+
+
+a:link { color: blue; }
+a:hover { color: green; }
+a:active { color: red; }
+a:visited { color: purple; }
+
+ul.nav {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}

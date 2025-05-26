@@ -1,0 +1,14 @@
+Responsive Web Design with Media Queries:
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+  body {
+    font-size: 14px;
+  }
+}

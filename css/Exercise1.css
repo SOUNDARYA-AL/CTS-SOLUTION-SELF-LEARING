@@ -1,0 +1,8 @@
+Why CSS? Inline vs. Internal vs. External
+CSS separates content from design.
+
+Inline: Direct style on element (e.g., <h1 style="color:red">Hello</h1>)
+
+Internal: Inside <style> tag in <head> for page-specific styles
+
+External: In separate .css file; best for reusability and maintenance
